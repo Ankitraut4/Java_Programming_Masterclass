@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="create_own_package_or_library:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/create_own_package_or_library_jar</output-path>
+    <root id="archive" name="create_own_package_or_library.jar">
+      <element id="module-output" name="create_own_package_or_library" />
+    </root>
+  </artifact>
+</component>
