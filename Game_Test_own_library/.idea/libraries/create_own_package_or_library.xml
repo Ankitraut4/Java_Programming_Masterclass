@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="create_own_package_or_library">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../create_own_package_or_library/out/artifacts/create_own_package_or_library_jar/create_own_package_or_library.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../create_own_package_or_library/out/artifacts/create_own_package_or_library_jar/create_own_package_or_library.jar!/" />
+    </SOURCES>
+  </library>
+</component>
