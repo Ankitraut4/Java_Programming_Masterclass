@@ -1,0 +1,24 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<GridPane fx:controller="sample.Controller"
+          xmlns:fx="http://javafx.com/fxml" alignment="TOP_CENTER" hgap="10" vgap="10" gridLinesVisible="true">
+    <padding>
+        <Insets  topRightBottomLeft="10"/>
+    </padding>
+<!--    <columnConstraints>--><!--this adjust the contanaints of coloumb percentwidth or percentheight to given percentage-->
+<!--        <ColumnConstraints percentWidth="60"/>--><!--i.e the coloumb will display 60 of the present display-->
+<!--        <ColumnConstraints percentWidth="20"/>--><!--i.e the coloumb will display 20 of the present display-->
+<!--        <ColumnConstraints percentWidth="10"/>--><!--i.e the coloumb will display 10 of the present display-->
+<!--    </columnConstraints>-->
+    <Button text="first button" GridPane.rowIndex="0" GridPane.columnIndex="0" textFill="red" GridPane.halignment="RIGHT"/><!--GridPane.halignment="RIGHT" it will align the button to right of row within-itself-->
+    <Button text="second button" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+    <Button text="third button" GridPane.rowIndex="0" GridPane.columnIndex="2" />
+    <Button text="fourth button" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+    <Button text="fifth button" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+    <Button text="sixth (6 th button) button!!!!!" GridPane.rowIndex="3" GridPane.columnIndex="0" GridPane.columnSpan="2" /><!--by going GridPane.columnSpan="2"it will take 2 columb-->
+    <Button text="7 button" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+</GridPane>
