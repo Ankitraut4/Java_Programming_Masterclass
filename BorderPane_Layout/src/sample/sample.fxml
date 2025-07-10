@@ -1,0 +1,46 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.layout.HBox?>
+<BorderPane fx:controller="sample.Controller"
+            xmlns:fx="http://javafx.com/fxml" ><!--in parent border pane we can align any position we only can align child of borderpane-->
+    <top>
+
+        <Label text="Label for top" alignment="TOP_CENTER"  textFill="Black" style="-fx-border-color:red; -fx-border-style:dashed"
+        BorderPane.alignment="TOP_CENTER"><!--here aliginment use as Top_center is not considered of label you should align BorderPane child -->
+       <padding>
+           <Insets topRightBottomLeft="5"/>
+       </padding>
+            <font>
+           <Font name="Times New Roman bold" size="20"/>
+       </font>
+        </Label>
+    </top>
+    <bottom>
+
+        <HBox alignment="BOTTOM_RIGHT" spacing="4">
+            <padding>
+                <Insets bottom="10" right="10"/>
+            </padding>
+            <Button text="OK"/>
+            <Button text="APPLY"/>
+            <Button text="HELP?"/>
+        </HBox>
+    </bottom>
+    <left>
+        <Label text="This is a Left Text......!" BorderPane.alignment="CENTER"/>
+    </left>
+    <right>
+        <Label text="This is right Text......!"/>
+    </right>
+    <center >
+
+        <Label text="THIS IS A CENTER TEXT WHICH IS ADJUST IT POSITION OF TEXT DISPLAY ACCORDING TO LEFT/RIGHT"
+        style="-fx-border-color:blue; -fx-border-style:dashed"/>
+
+    </center>
+</BorderPane>
