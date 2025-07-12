@@ -1,0 +1,13 @@
+
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.control.Button?>
+<TilePane fx:controller="sample.Controller"
+          xmlns:fx="http://javafx.com/fxml" >
+    <Button text="ok"/>
+    <Button text="HElllo"/>
+    <Button text="Hi"/>
+    <Button text="NO"/>
+    <Button text="Number"/>
+    <Button text="Number ten"/>
+    <Button text="h"/>
+</TilePane>
