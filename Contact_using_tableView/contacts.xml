@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contacts>
+<contact>
+	<first_name>Ankit</first_name>
+	<last_name>Raut</last_name>
+	<phone_number>9423127143</phone_number>
+	<notes>my number</notes>
+</contact>
+<contact>
+	<first_name>Suresh</first_name>
+	<last_name>Raut</last_name>
+	<phone_number>9421754556</phone_number>
+	<notes>Father's number</notes>
+</contact>
+<contact>
+	<first_name>Sangita</first_name>
+	<last_name>Raut</last_name>
+	<phone_number>43543</phone_number>
+	<notes>Mother's number</notes>
+</contact>
+<contact>
+	<first_name>Mohit</first_name>
+	<last_name>Raut</last_name>
+	<phone_number>13243546</phone_number>
+	<notes>little brother</notes>
+</contact>
+</contacts>
