@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Package_challange_create_library:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Package_challange_create_library_jar</output-path>
+    <root id="archive" name="Package_challange_create_library.jar">
+      <element id="module-output" name="Package_challange_create_library" />
+    </root>
+  </artifact>
+</component>
