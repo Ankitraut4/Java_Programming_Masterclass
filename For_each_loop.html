@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ForEach Loop</title>
+    </head>
+    <body>
+    
+        <ul >
+        <li class="li">Iten 1</li>
+             <li class="li">Item 2</li>
+             <li class="li">Item 3</li>
+             <li class="li">Item 4</li>
+             <li class="li">Item 5</li>
+             <li class="li">Item 6</li>
+             <li class="li">Item 7</li>
+             <li class="li">Item 8</li>
+             <li class="li">Item 9</li>
+             <li class="li">Item 10</li>
+             <li class="li">Item 11</li>
+             <li class="li">Item 12</li>
+             <li class="li">Item 13</li>
+             <li class="li">Item 14</li>
+        </ul>
+    <script>
+        var names=['ankit',"mohit","pavan","ashish","nikhil","manish"];
+        names.forEach(function(name,index){
+            console.log(index, name);
+        })
+        
+        
+        
+        
+        var lis=document.querySelectorAll(".li");
+        lis.forEach(function(node,index){
+            if(index>=10){
+                node.remove();
+                return false;//here we return false or only return to function we can not use continue as here it is not for,while,foreach loop basically loop here it is function so we have return the execution to the function after index >=10 so tha statement after if should execution
+            }
+            node.innerText="Items "+(index*2)+" ";
+        })
+        </script>
+    
+    
+    </body>
+
+</html>
