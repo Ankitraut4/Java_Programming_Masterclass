@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Modal Project class</title>
+    <style>
+        .modal{
+            padding:10px;
+            width:350px;
+            height:auto;
+            top: 50%;
+            left: 50px;
+            position: fixed;
+            border-style: groove;
+            border-width: 5px;
+            border-color: black;
+            background-color: aqua;
+            transform: translate(50%,-50%);
+            display: none;
+            
+        }
+        .button_close{
+            background-color: black;
+            color: white;
+            width:150px;
+            text-align: center;
+            border-radius: 20px;
+        }
+         .change{
+            background-color: grey;
+            color: white;
+            width:150px;
+            text-align: center;
+            border-radius: 20px;
+            margin: 70px 900px 0px 200px;
+        }
+        .button_open{
+            padding: 10px;
+            margin: 5px 5px;
+            border-radius: 20px;
+        }
+    </style>
+    </head>
+    <body>
+        <div>
+        <button class="button_open">Click To Open</button>
+        </div>
+    <div class="modal">
+        <h1 class="title">Mumbai Daily</h1>
+        <p class="text">
+Mumbai is the capital city of the Indian state of Maharashtra and the de facto financial centre of India. According to the United Nations, as of 2018, Mumbai is the second-most populous city in India after Delhi and the eighth-most populous city in the world with a population of roughly 2 crore (20 million). As per the Indian government population census of 2011
+
+</p>
+        <p ><button class="button_close">Click To Close</button></p>
+         <p ><button class="change">Change Title OR Text</button></p>
+        </div>
+        <script>
+        
+        
+           
+            class Modal{
+            constructor(){
+                this.modal= document.querySelector(".modal");  
+                this.title=document.querySelector(".title");
+                this.text=document.querySelector(".text");
+            }
+                open(){
+                     this.modal.style.display='initial';
+                }
+                close(){
+                    this.modal.style.display='none';
+                }
+                changeContent(title,text){
+                    this.title=document.querySelector(".title").innerText=title;
+                    this.text=document.querySelector(".text").innerText=text;
+                }
+         
+              }
+           
+            
+            
+                const buttonOpen=document.querySelector(".button_open");
+            const buttonClose=document.querySelector(".button_close");
+            const change=document.querySelector(".change");
+            
+            const modal=new Modal();
+            
+            
+           change.addEventListener('click',function(event){
+               modal.changeContent("Pune","Pune (Marathi: [puɳe] (listen); English: /ˈpuːnə/; also known as Poona, the official name until 1978) is the seventh most populous city in India and the second-largest city in the state of Maharashtra, with an estimated population of 7.4 million as of 2020.It has been ranked the most liveable city in India several times. Along with the municipal corporation of PCMC, PMC and the three cantonment towns of Camp, Khadki, and Dehu Road, Pune forms the urban core of the eponymous Pune Metropolitan Region (PMR).");
+           })
+           
+             buttonOpen.addEventListener('click',function(event){
+               modal.open();
+            })
+            
+             buttonClose.addEventListener('click',function(event){
+            modal.close();
+            })
+            
+
+            
+        
+        </script>
+        
+    
+    </body>
+
+</html>
