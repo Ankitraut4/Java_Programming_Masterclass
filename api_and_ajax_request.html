@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>API and Ajax Request</title>
+    </head>
+    <body>
+    <h1>API and AJAX REQUEST</h1>
+    <script>
+
+        var luke=" ";
+        fetch('https://swapi.dev/api/people/1/')
+        .then(function(response){
+            return response.json()
+        })
+        .then(function(res){
+            luke=res
+            console.log(luke);
+           luke.films.forEach(function(node,index){
+                console.log(index,node);
+            })
+        })
+        </script>
+    </body>
+</html>
