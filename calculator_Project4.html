@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mini Project #4</title>
+    </head>
+    <body>
+        <h1 id="sum"></h1>
+    <script>
+    
+       var num1=prompt("enter number 1");
+        num1=Number(num1);
+        
+        var num2=prompt("enter number 2");
+        num2=Number(num2);
+        
+        function calculator(numa=num1,numb=num2){
+            return numa+numb;
+        }
+        
+        function $(id){
+            return document.getElementById(id);
+        }
+        
+        var sum=calculator();
+        var title=$("sum");
+        title.innerHTML="Sum of number = "+sum+" ";
+        
+        </script>
+    
+    </body>
+
+</html>
