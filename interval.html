@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Intervals</title>
+    </head>
+    <body>
+    <h1>Intervals</h1>
+    <script>
+       var logger=setInterval(function(){
+           console.log("Interval");
+       },1000);
+        
+        setTimeout(function(){
+            clearInterval(logger);
+        },5000);
+        
+        </script>
+    </body>
+</html>
