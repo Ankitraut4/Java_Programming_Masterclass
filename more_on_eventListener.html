@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Listener</title>
+    </head>
+    <body>
+    
+        <button class="button1">
+        Click to Increment
+        </button>
+        <br>
+        <h1 class="h1"></h1>
+        <script>
+        var input=document.querySelector(".button1");
+            input.addEventListener('click',increment);
+            var totalClick=0;
+            function increment(event){
+                var value=document.querySelector(".h1");
+                totalClick=totalClick+1;
+                value.innerText=totalClick;
+            }
+        
+        </script>
+    
+    
+    
+    </body>
+
+</html>
