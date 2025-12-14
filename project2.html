@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+  Project #2
+    </title>
+    </head>
+    <body>
+        <h1 id="input"></h1>
+    
+    <script>
+      var p= prompt("Enter the url");
+        var output=document.getElementById("input");
+        
+        var url=p.toLowerCase();
+       if(url=="null"){
+           console.error("no url is entered ")
+       }else{
+           var url1=url.substr(0,4);
+           if(url1!="http"){
+              url1="http://"+url;
+           
+           var html="<a href='"+url1+"'>"+url1+"</a>";
+           output.innerHTML="your url is :-- "+html;
+           }
+           else{
+               
+               output.innerHTML="your url is :-- "+"<a href='"+url+"'>"+url+"</a>";
+           }
+           
+           
+       }
+        </script>
+    </body>
+
+</html>
