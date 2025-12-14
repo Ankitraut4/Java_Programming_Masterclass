@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Function</title>
+    </head>
+    <body>
+        <h1 id="title"></h1>
+    
+    <script>
+       
+        function doMath(number){
+            var num=Number(number);
+            if(num){
+                return num * 2;
+            }else{
+                console.warn("invalid datatype ");
+            }
+        }
+        var value=doMath(2);
+        console.log(value);
+        
+         var value=doMath("ankit");
+        console.log(value);
+        
+        function $(id){
+            
+            var varId=document.getElementById(id);
+            return varId;
+        }
+        
+        var tit=$("title");
+        tit.innerHTML="Hello from function";
+        
+        
+        //function for converting celcius to farenheit
+        function cToF(num){
+            num=Number(num);
+            if(num){
+                var value=(num*1.8)+32;
+                return value;
+            }else{
+                console.warn("invalid datatype");
+            }
+        }
+        
+        var value=cToF("32");//in function string is casted into number
+        console.log(value);
+        
+        var value=cToF(32);
+        console.log(value);
+        
+        </script>
+    
+    </body>
+
+</html>
