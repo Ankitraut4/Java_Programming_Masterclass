@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Query Selector</title>    
+</head>
+    <body>
+    
+        <small>hello every one</small>
+        <h1 class="h1">Hello world .
+        
+        <small>My name is ankit</small>
+        </h1>
+        <a href="#">Link for google</a>
+        <ul>
+        <li>Name 1</li>
+             <li>Name 2</li>
+             <li>Name 3</li>
+             <li>Name 4</li>
+             <li>Name 5</li>
+             <li>Name 6</li>
+        </ul>
+        
+        <input type="text" width=100px height="10px" class="form_box" value="ankit raut" > 
+<!--        here we use default value for box as we be want to get that value-->
+        
+    
+        <script>
+           var small=document.querySelector("small");//selection  by elemnet name as small but it will select only first element named as small
+            small.innerHTML="hello!!!";
+            
+            var title=document.querySelector(".h1");//directly doing title.innerHtml we can change whole h1 tag text or text inside h1 tag
+            var small1=title.querySelector("small");
+            small1.innerHTML="<u>My name is ankit</u>";
+            
+            var link=document.querySelector("a");
+            link.innerText="Google Link";
+            
+            var lis=document.querySelectorAll("li");//by using querySelectorAll we are selecting all elements of name li and store li in list or arrray format so lis is an array
+            
+            lis[0].innerText="hiiiiiiiiiiiiiiiiiiiiii";
+            lis[4].innerHTML="<a href='#'>link for code.getComputedStyle</a>";
+            
+            
+            
+            var input=document.querySelector(".form_box");
+            console.log(input.value);
+            
+        </script>
+    
+    </body>
+
+
+</html>
