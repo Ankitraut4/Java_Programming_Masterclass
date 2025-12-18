@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>While Loop</title>
+    </head>
+    <body>
+    <h2>List:</h2>
+        <ul class="ul"></ul>
+    <script>
+       var ul=document.querySelector(".ul");
+        var html=" ";
+        var lastNumber=Number(prompt("enter the last number "));
+        var firstNumber=1;
+        while(firstNumber<=lastNumber){
+            html=html+"<li> List: "+firstNumber+"</li>";
+            console.log(html);
+            firstNumber++;
+             
+        }
+       ul.innerHTML=html;
+        </script>
+    
+    
+    </body>
+
+</html>
