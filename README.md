@@ -2,8 +2,6 @@
 
 This repository contains hands-on implementations, exercises, and practice projects completed while studying the **Java Programming Masterclass covering Java 11 & Java 17** on Udemy.
 
-The coursework focuses on building strong programming fundamentals and software engineering skills aligned with **IC3 (Individual Contributor Level 3) – Entry-Level Software Engineer competencies**, emphasizing problem-solving, object-oriented design, and practical Java development.
-
 ---
 
 ## 📚 Core Concepts Covered
