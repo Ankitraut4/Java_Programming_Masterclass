@@ -80,4 +80,3 @@ This repository demonstrates practical understanding of modern Java development 
 ## 📅 Certification
 **Course:** Java Programming Masterclass covering Java 11 & Java 17  
 **Platform:** Udemy  
-**Completion:** August 2021
